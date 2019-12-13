@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:layout_alignParentTop="true"
+    >
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/steams"
+
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/activity_main"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/uap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toko Game Uap"
+                android:textColor="#ebebdf"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-thin"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                app:civ_border_color="#2F2B2B"
+                app:civ_border_width="2dp"
+                android:id="@+id/image"
+                android:layout_below="@id/uap"
+                android:layout_centerHorizontal="true"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/steam"
+                />
+            <ExpandableListView
+                android:layout_below="@id/image"
+                android:id="@+id/listoe"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            </ExpandableListView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
